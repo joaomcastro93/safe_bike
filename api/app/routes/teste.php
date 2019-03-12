@@ -13,3 +13,8 @@ $app->get('/Marker',function(){
     $db=new \App\Controllers\CInsertPoint();
     $db->GetMarker();
 });
+// new end points
+$app->get('/Bikes',function(){
+    $db=new \App\Controllers\CBike();
+    $db->GetBikes();
+});
